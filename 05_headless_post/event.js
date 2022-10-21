@@ -27,14 +27,16 @@ function postActively() {
 }
 
 function postInactively() {
-  chrome.tabs.create({
-    url: "https://github.com/GDG-Xian/Campfire/discussions/new?category=04-test",
-    active: false
-  }, tab => {
-    chrome.tabs.executeScript(tab.id, { code }, function() {
-      setTimeout(() => {
-        chrome.tabs.remove(tab.id);
-      }, 3000);
-    });
-  });
+  setTimeout(() => {
+    chrome.tabs.create({
+      url: "https://github.com/GDG-Xian/Campfire/discussions/new?category=04-test",
+      active: false
+    }, tab => {
+      chrome.tabs.executeScript(tab.id, { code }, function() {
+        setTimeout(() => {
+          chrome.tabs.remove(tab.id);
+        }, 3000);
+      });
+    });  
+  }, 3000);
 }
