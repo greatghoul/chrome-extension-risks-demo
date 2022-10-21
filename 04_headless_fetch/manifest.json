@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "04 Headless Fetch",
+  "description": "",
+  "version": "1.0.0",
+
+  "icons": {
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+
+  "background": {
+    "scripts": ["event.js"],
+    "persistent": true
+  },
+
+  "permissions": [
+    "tabs",
+    "<all_urls>"
+  ]
+}
