@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
 
-  "name": "02 - Fake Resource Demo",
+  "name": "01 Fake Redirect",
   "description": "",
   "version": "1.0.0",
 
@@ -18,6 +18,6 @@
   "permissions": [
     "webRequest",
     "webRequestBlocking",
-    "<all_urls>"
+    "*://*.baidu.com/*"
   ]
 }

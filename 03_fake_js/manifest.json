@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "03 Fake JS",
+  "description": "",
+  "version": "1.0.0",
+
+  "icons": {
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+
+  "background": {
+    "scripts": ["event.js"],
+    "persistent": true
+  },
+
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ]
+}
