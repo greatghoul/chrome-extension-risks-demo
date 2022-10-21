@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "05 Headless Post",
+  "description": "",
+  "version": "1.0.0",
+
+  "icons": {
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+
+  "background": {
+    "scripts": ["event.js"],
+    "persistent": true
+  },
+
+  "permissions": [
+    "tabs",
+    "<all_urls>"
+  ]
+}
